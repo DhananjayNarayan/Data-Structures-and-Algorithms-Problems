@@ -1,14 +1,14 @@
 public void showMap(GameMap gameMap) {
         
 		
-		// Showing the players in game
-				HashMap<String, Player> players=gameMap.getPlayers();
-				System.out.println("Players: ");
-				if(players!=null) {
+	// Showing the players in game
+	 HashMap<String, Player> players=gameMap.getPlayers();
+		System.out.println("Players: ");
+		if(players!=null) {
 					
-					players.forEach((key, value) -> System.out.println(key + " : " + value));  // will slightly modify the output after testing with the entire project
-				System.out.println();
-				}
+		players.forEach((key, value) -> System.out.println(key + " : " + value));  // will slightly modify the output after testing with the entire project
+		System.out.println();
+		}
 				
 				
 				
@@ -58,7 +58,7 @@ public void showMap(GameMap gameMap) {
 				Country country = (Country) listIterator.next();
 
 		System.out.format(table, country.getId(), country.getName(), continent.getName(),country.getNeighbors(),country.getArmies(), country.getPlayer().getName());
-		//System.out.format(table, country.getId(), country.getName(), continent.getName(),country.getNeighbors().get,country.getArmies(), country.getPlayer().getName());
+	//System.out.format(table, country.getId(), country.getName(), continent.getName(),country.getNeighbors().get,country.getArmies(), country.getPlayer().getName());
 
 			}
 		}
